@@ -1,0 +1,25 @@
+<div>
+    <ul class="sidebar">
+        <li>
+            <ul class="sidebar-group">
+                <li class="sidebar-group-member">
+                    <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon aria-hidden="false" fontIcon="celebration"></mat-icon>
+                        Welcome to JamPad!
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li *ngFor="let group of groups">
+            <div class="sidebar-title">{{ group.title }}</div>
+            <ul class="sidebar-group">
+                <li class="sidebar-group-member" *ngFor="let category of group.categories">
+                    <a [routerLink]="category.link" routerLinkActive="active-link">
+                        <mat-icon aria-hidden="false" [fontIcon]="category.icon"></mat-icon>
+                        {{ category.name }}
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
