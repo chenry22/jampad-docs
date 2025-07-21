@@ -2,12 +2,14 @@ import { Routes } from '@angular/router';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 import { WipPageComponent } from './pages/wip-page/wip-page.component';
 import { EventFeedPageComponent } from './pages/event-feed-page/event-feed-page.component';
+import { SearchPageComponent } from './pages/search-page/search-page.component';
+import { MapPageComponent } from './pages/map-page/map-page.component';
 
 export const routes: Routes = [
     { path: '', component: WelcomePageComponent },
     { path: 'event_feed', component: EventFeedPageComponent },
-    { path: 'search', component: WipPageComponent },
-    { path: 'map', component: WipPageComponent },
+    { path: 'search', component: SearchPageComponent },
+    { path: 'map', component: MapPageComponent },
     { path: 'event_creator', component: WipPageComponent },
     { path: 'profile', component: WipPageComponent },
     { path: 'events', component: WipPageComponent },

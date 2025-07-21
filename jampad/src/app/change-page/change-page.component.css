@@ -1,0 +1,38 @@
+#button-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 20px 0 40px;
+}
+
+.prev {
+    text-align: right;
+}
+
+.change-page {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+
+    padding: 14px 18px;
+    border-radius: 6px;
+    border: 1px solid lightgray;
+}
+.change-page:hover {
+    border: 1px solid lightblue;
+    color: rgb(67, 111, 126);
+}
+
+.label-container {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.label {
+    font-size: small;
+    color: gray;
+}

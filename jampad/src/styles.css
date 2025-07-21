@@ -1,2 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.spacer {
+    flex-grow: 100;
+}
+
+.subtitle {
+    color: gray;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+.logo img {
+    border-radius: 20px;
+    width: 140px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    gap: 20px;
+    width: 100%;
+}
+.centered img {
+    border-radius: 8px;
+}

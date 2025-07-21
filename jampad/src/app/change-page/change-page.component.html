@@ -1,0 +1,16 @@
+<div id="button-container">
+    <a [routerLink]="prevLink()" class="change-page prev" *ngIf="this.prev() != ''">
+        <mat-icon aria-hidden="false" fontIcon="chevron_left"></mat-icon>
+        <div class="label-container">
+            <div class="label">Previous</div>
+            <div>{{ prev() }}</div>
+        </div>
+    </a>
+    <a [routerLink]="nextLink()" class="change-page" *ngIf="this.next() != ''">
+        <div class="label-container">
+            <div class="label">Next</div>
+            <div>{{ next() }}</div>
+        </div>
+        <mat-icon aria-hidden="false" fontIcon="chevron_right"></mat-icon>
+    </a>
+</div>
