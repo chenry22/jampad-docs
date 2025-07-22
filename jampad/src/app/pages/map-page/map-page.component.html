@@ -1,1 +1,24 @@
-<p>map-page works!</p>
+<h1 id='title'>Map View</h1>
+<h3 class="subtitle">Find it on JamPad.</h3>
+
+<p>The map view is the core functionality of JamPad. At the bottom of the map is a search button. Any areas visible on your screen will be searched for events based on your current filters. Each event will show up as a map marker. Clicking on any of these markers will pull up a scrollable view with previews of events that appeared from your search!</p>
+<div class="centered">
+    <img height="450px" src="map/main.png" />
+    <img height="450px" src="map/scroller.png" />
+</div>
+<br>
+<h2>Map Filters</h2>
+<p>If you want to change the scope of your search, you can pull up your search filters. Here you can change the date, cost, and age range you'd like to search for. You can also specify any event tags you'd like your search to consider.</p>
+<div class="centered">
+    <img height="450px" src="map/filters.png" />
+</div>
+<br>
+<h2>Location Search</h2>
+<p>At the top of the screen is a search bar. You can use this to search for any events happening at specific locations. Your searched location will appear as a custom marker- click this to see all registered events from that venue!</p>
+<div class="centered">
+    <img height="450px" src="map/search.png" />
+    <img height="450px" src="map/search_marker.png" />
+    <img height="450px" src="map/search_venue.png" />
+</div>
+<p>On this page you can also create a new event at your searched location. This will pull up the normal <a routerLink="/event_creator">event creator</a> page but with the address filled in.</p>
+<app-change-page [prev]="'Search'" [next]="'Event Creator'"></app-change-page>

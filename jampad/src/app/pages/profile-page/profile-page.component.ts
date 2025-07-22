@@ -3,12 +3,12 @@ import { RouterModule } from '@angular/router';
 import { ChangePageComponent } from '../../change-page/change-page.component';
 
 @Component({
-  selector: 'app-map-page',
+  selector: 'app-profile-page',
   imports: [RouterModule, ChangePageComponent],
-  templateUrl: './map-page.component.html',
-  styleUrl: './map-page.component.css'
+  templateUrl: './profile-page.component.html',
+  styleUrl: './profile-page.component.css'
 })
-export class MapPageComponent implements OnInit {
+export class ProfilePageComponent implements OnInit {
   ngOnInit() {
     let el = document.getElementById('title');
     el?.scrollIntoView();

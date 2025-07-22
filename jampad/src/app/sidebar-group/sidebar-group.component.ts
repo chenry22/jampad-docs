@@ -32,18 +32,17 @@ export class SidebarGroupComponent {
       categories: [
         { name: "Events", icon: "receipt", link: "/events" },
         { name: "RSVPs", icon: "rsvp", link: "/rsvps" },
-        { name: "Saves", icon: "bookmark", link: "/saves" },
         { name: "Check Ins", icon: "check_circle", link: "/check_ins" },
-        { name: "Comments", icon: "comment", link: "/comments" },
         { name: "Ratings", icon: "star", link: "/ratings" }
       ]
     },
     { title : "COMMUNITY",
       categories: [
-        { name: "Referrals", icon: "people_alt", link: "/referrals" },
+        { name: "Artist Accounts", icon: "music_note", link: "/artist_accounts" },
+        { name: "Venue Accounts", icon: "door_front", link: "/venue_accounts" },
         { name: "Frogs", icon: "spa", link: "/frogs" },
         { name: "Frog Coin", icon: "circle", link: "/frog_coin" },
-        { name: "Leaderboards", icon: "leaderboard", link: "/leaderboards" }
+        { name: "Leaderboards", icon: "leaderboard", link: "/leaderboards" },
       ]
     },
     { title : "INFO",

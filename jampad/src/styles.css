@@ -5,7 +5,12 @@
     flex-grow: 100;
 }
 
+#title {
+    margin-bottom: 0;
+}
+
 .subtitle {
+    margin-top: 10px;
     color: gray;
     font-weight: 400;
     font-style: italic;

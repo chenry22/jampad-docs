@@ -1,1 +1,27 @@
-<p>event-creator-page works!</p>
+<h1 id='title'>Event Creator</h1>
+<h3 class="subtitle">Share what's happening!</h3>
+
+<p>The event creator allows you to share new events with the JamPad community! To post an event, you only have to provide a valid address and date (though there are many other fields which you can fill out to provide more info about the event).</p>
+<div class="centered">
+    <img height="450px" src="creator/main.png" />
+</div>
+<p>If applicable, you can set your event to be private. Private events will not show up in public feeds and the event location will only be shown to users who are RSVPed. All RSVPs for private events have to be approved by you or a featured creator linked to the event. See more about this in the <a routerLink="/rsvps">RSVP</a> section.</p>
+<br>
+<h2>Adding Artists</h2>
+<p>Use the artist search feature to add featured creators to an event. This will search for existing artist accounts on JamPad matching your input. If you see the artist you're trying to add, click on the search result to link them to this event.</p>
+<p>Not all artists will have registered accounts (sadly). If you don't find the artist you're looking for, you can submit any text to show that they're featured without linking a JamPad account. You can tap on added artists to remove them and drag and drop to re-order them.</p>
+<div class="centered">
+    <img height="450px" src="creator/artist_search.png" />
+    <img height="450px" src="creator/artist_add.png" />
+</div>
+<br>
+<h2>Adding Tags</h2>
+<p>Use the tag search feature to add any relevant tags to your post. Currently only recognized tags can be added, which will show up as you search for them. Double tap on added tags to remove them and drag and drop to re-order them.</p>
+<div class="centered">
+    <img height="450px" src="creator/tags.png" />
+</div>
+<br>
+<h2>Event Verification</h2>
+<p>If you are an admin account, all events you create will be automatically verified. If you are an artist account, any events you are a part of will be automatically verified. If you are a venue account, any events at your venue will be automatically verified.</p>
+<p>Otherwise, your event will have to be verified by an admin or an artist featured at the event. When an event is verified, the user who posted it will be awarded 30 FrogCoin.</p>
+<app-change-page [prev]="'Map'" [next]="'Profile'"></app-change-page>
