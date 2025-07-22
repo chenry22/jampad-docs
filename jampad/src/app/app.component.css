@@ -36,6 +36,8 @@ main {
 
     flex-direction: column;
     align-items: left;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -56,15 +58,14 @@ main {
 .content {
     display: flex;
     flex-direction: row;
-    height: 86vh;
-    width: 100%;
+    min-height: 0;
+    max-height: 90dvh;
     margin: 0;
 }
 
 .sidebar {
     display: flex;
     flex-grow: 0;
-    height: 86vh;
     position: relative;
     top: 0;
     margin: 0 4vw 0 1.5rem;
@@ -101,4 +102,61 @@ hr.solid {
 }
 .docs::-webkit-scrollbar {
     display: none;
+}
+
+
+
+/* MOBILE STUFF */
+.burger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.filled {
+    color: lightblue;
+    background-color: rgb(217, 243, 252);
+    border-radius: 8px;
+}
+.mobile-sidebar {
+    display: none;
+    flex-grow: 0;
+    position: relative;
+    top: 0;
+    margin: 0 4vw 0 1.5rem;
+    min-width: 12rem;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    -ms-overflow-style: none;  /* hide scrollbar... */
+    scrollbar-width: none;
+}
+.mobile-sidebar::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+  
+    .solid {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+    .mobile-sidebar {
+        display: flex;
+    }
+
+    .header {
+        margin: 0;
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .docs {
+        margin: 0 1rem 0 1rem;
+    }
 }

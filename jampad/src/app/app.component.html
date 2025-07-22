@@ -1,16 +1,25 @@
 <main class="main">
   <div class="header">
+    <button class="burger" [class.filled]="isSidebarOpen" (click)="isSidebarOpen = !isSidebarOpen">&#9776;</button>
     <img id="header-logo" src="jampad.png" />
     <h1>JamPad Docs</h1>
   </div>
-  
-  <div class="content">
-    <div class="sidebar">
+
+  <div class="content" *ngIf="isSidebarOpen; else main_view">
+    <div class="mobile-sidebar">
       <app-sidebar-group></app-sidebar-group>
     </div>
-    <hr class="solid">
-    <div class="docs">
-      <router-outlet></router-outlet>
-    </div>
   </div>
+  
+  <ng-template #main_view>
+    <div class="content">
+      <div class="sidebar">
+        <app-sidebar-group></app-sidebar-group>
+      </div>
+      <hr class="solid">
+      <div class="docs">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </ng-template>
 </main>
