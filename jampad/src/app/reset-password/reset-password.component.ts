@@ -27,21 +27,14 @@ export class ResetPasswordComponent implements OnInit {
   success = false;
 
   async ngOnInit() {
-    const { access_token, type } = this.route.snapshot.queryParams;
-
-    if (!access_token || type !== 'recovery') {
-      this.error = 'Invalid or expired reset link.';
+    const code = this.route.snapshot.queryParamMap.get('code');
+    if(!code) {
+      this.error = "Invalid or expired reset link.";
       return;
     }
-
-    // Set session with recovery token
-    const { error } = await supabase.auth.setSession({
-      access_token,
-      refresh_token: '', // leave blank for recovery
-    });
-
-    if (error) {
-      this.error = error.message;
+    const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+    if (error || !data?.session) {
+      this.error = 'Failed to set session: ' + (error?.message || 'unknown error');
     }
   }
 
