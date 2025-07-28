@@ -20,7 +20,10 @@
     "@angular/platform-browser": "^19.0.0",
     "@angular/platform-browser-dynamic": "^19.0.0",
     "@angular/router": "^19.0.0",
+    "@supabase/ssr": "^0.6.1",
     "@supabase/supabase-js": "^2.52.0",
+    "ngx-image-compress": "^18.1.5",
+    "p5": "^2.0.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -30,6 +33,7 @@
     "@angular/cli": "^19.0.4",
     "@angular/compiler-cli": "^19.0.0",
     "@types/jasmine": "~5.1.0",
+    "@types/p5": "^1.7.6",
     "angular-cli-ghpages": "^2.0.3",
     "jasmine-core": "~5.4.0",
     "karma": "~6.4.0",

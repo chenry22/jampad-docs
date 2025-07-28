@@ -1,14 +1,19 @@
 <h1 id='title'>Profiles</h1>
-<h3 class="subtitle">Become a part of the community!</h3>
-<p>Every JamPad account has a profile, which is uniquely identifiable by their username. Their profile will also display their chosen display name, bio, and follower/following counts. Click on either of these to see the full list of users. Follow a user to see their activity in app and any events they post.</p>
+<p>Every JamPad account has a profile, which is uniquely identifiable by their username. Follow a user to see their public activity in app and any events they post.</p>
 <p>On each basic profile is a list of the user's RSVPed events, separated into upcoming and past. Upcoming events are ordered with the soonest first, descending further into the future.</p>
 <div class="centered">
     <img src="profile/main.png" />
+    <img src="profile/events.png" />
 </div>
 <br>
 <h2>Past Events</h2>
-<p>Instead of the normal event information prevented on an event preview, past events instead show their rating. If the profile you're looking at has posted a rating for that event, that will show up here (including any of your own ratings). Otherwise the average event rating will appear here (if at least one rating has been posted).</p>
+<p>Past events will display a rating instead of the normal event preview. If the profile you're currently looking at has posted a rating for that event, that will show up here (including your own ratings). Otherwise the average event rating will appear here.</p>
 <div class="centered">
     <img src="profile/ratings.png" />
+</div>
+<h2>Notifications</h2>
+<p>Click the bell icon in the top right corner of your own profile to see all your past account notifications. The second tab shows any pending RSVPs for events you are currently managing (as an event creator, artist, or venue). </p>
+<div class="centered">
+    <img src="profile/notis.png" />
 </div>
 <app-change-page [prev]="'Event Creator'" [next]="'Events'"></app-change-page>

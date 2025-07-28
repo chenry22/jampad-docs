@@ -8,6 +8,18 @@
                         Welcome
                     </a>
                 </li>
+                <li class="sidebar-group-member">
+                    <a routerLink="/download" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon aria-hidden="false" fontIcon="download_2"></mat-icon>
+                        Download
+                    </a>
+                </li>
+                <li class="sidebar-group-member">
+                    <a routerLink="/create_cosmetic" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon aria-hidden="false" fontIcon="brush"></mat-icon>
+                        Cosmetic Creation
+                    </a>
+                </li>
             </ul>
         </li>
         <li *ngFor="let group of groups">

@@ -1,0 +1,29 @@
+<h1 id='title'>Events</h1>
+<h3 class="subtitle">The core component of JamPad.</h3>
+<p>When you click on an event you will be presented with all the information provided for that event. Take special note of the top left corner of this page. A yellow seal signifies a recognized creator or admin has reviewed this event and verified it as a real event.</p>
+<div class="centered">
+    <img src="events/event1.png" />
+    <img src="events/event2.png" />
+</div>
+<p>Click on the event's location to see all past and upcoming events that took place at that venue. Click on the RSVP count to see all accounts that publicly RSVPed to this event.</p>
+<br>
+<h2>Event Interaction</h2>
+<p>After the event information is displayed, you will see a series of buttons which let you interact with the event. Click the heart to like the event- this is really just a way to show your support and boost the events position in the feed algorithm.</p>
+<p>RSVP for the event to add it to your list of upcoming events <i>(It's technically a little more complicated than this, see <a routerLink="/rsvps">RSVPs</a>)</i>. Click the bookmark to add the event to your list of saved events. If you are the event creator or an artist/venue linked to the account you will have access to edit the event details.</p>
+<div class="centered">
+    <img src="events/event2.png" />
+</div>
+<br>
+<h2>Past Events</h2>
+<p>Past events will display their average rating as well as the number of check ins that event had (also a clickable list).</p>
+<div class="centered">
+    <img src="events/past.png" />
+</div>
+<br>
+<h2>Comments and Ratings</h2>
+<p>At the bottom of each event view is the comment and (if the event has passed) ratings sections. Here you can share your thoughts on the posted event and interact with other JamPad users!</p>
+<div class="centered">
+    <img src="events/comment.png" />
+    <img src="events/rating.png" />
+</div>
+<app-change-page [prev]="'Profile'" [next]="'RSVPs'"></app-change-page>

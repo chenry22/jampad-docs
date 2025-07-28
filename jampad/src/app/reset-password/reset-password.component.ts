@@ -2,14 +2,14 @@
 
 import { Component, inject, OnInit } from '@angular/core';
 import { createClient } from '@supabase/supabase-js';
+import { createBrowserClient } from '@supabase/ssr';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-export const supabase = createClient(
-  'https://hhoavnmqrezwbnwzfmjo.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhob2F2bm1xcmV6d2Jud3pmbWpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcyNjg4OTUsImV4cCI6MjA2Mjg0NDg5NX0.IJ6t9v4Xe4fYoReXd_R2UPNYjF_VZo4ePbhi8GJNi9g'
-);
+const supabaseURL = 'https://hhoavnmqrezwbnwzfmjo.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imhob2F2bm1xcmV6d2Jud3pmbWpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcyNjg4OTUsImV4cCI6MjA2Mjg0NDg5NX0.IJ6t9v4Xe4fYoReXd_R2UPNYjF_VZo4ePbhi8GJNi9g';
+export const sb = createBrowserClient(supabaseURL, supabaseKey);
 
 @Component({
   selector: 'app-reset-password',
@@ -19,7 +19,6 @@ export const supabase = createClient(
 })
 export class ResetPasswordComponent implements OnInit {
   route = inject(ActivatedRoute);
-  router = inject(Router);
 
   password = '';
   confirmPassword = '';
@@ -32,7 +31,7 @@ export class ResetPasswordComponent implements OnInit {
       this.error = "Invalid or expired reset link.";
       return;
     }
-    const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+    const { data, error } = await sb.auth.exchangeCodeForSession(code);
     if (error || !data?.session) {
       this.error = 'Failed to set session: ' + (error?.message || 'unknown error');
     }
@@ -44,7 +43,7 @@ export class ResetPasswordComponent implements OnInit {
       return;
     }
 
-    const { error } = await supabase.auth.updateUser({ password: this.password });
+    const { error } = await sb.auth.updateUser({ password: this.password });
 
     if (error) {
       this.error = error.message;

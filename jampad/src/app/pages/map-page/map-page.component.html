@@ -1,7 +1,7 @@
 <h1 id='title'>Map View</h1>
 <h3 class="subtitle">Find it on JamPad.</h3>
 
-<p>The map view is the core functionality of JamPad. At the bottom of the map is a search button. Any areas visible on your screen will be searched for events based on your current filters. Each event will show up as a map marker. Clicking on any of these markers will pull up a scrollable view with previews of events that appeared from your search!</p>
+<p>The map view is the core functionality of JamPad. At the bottom of the map is a search button. Any areas visible on your screen will be searched for events (based on your current filters). Each event will show up as a map marker. Clicking on any of these markers will pull up a scrollable view with previews of events that appeared from your search!</p>
 <div class="centered">
     <img src="map/main.png" />
     <img src="map/scroller.png" />
@@ -20,5 +20,5 @@
     <img src="map/search_marker.png" />
     <img src="map/search_venue.png" />
 </div>
-<p>On this page you can also create a new event at your searched location. This will pull up the normal <a routerLink="/event_creator">event creator</a> page but with the address filled in.</p>
+<p>On this page you can also create a new event at your searched location. This will pull up the normal <a routerLink="/event_creator">event creator</a> page with the address filled in.</p>
 <app-change-page [prev]="'Search'" [next]="'Event Creator'"></app-change-page>

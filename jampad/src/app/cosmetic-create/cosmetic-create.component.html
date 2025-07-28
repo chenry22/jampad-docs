@@ -1,0 +1,62 @@
+<div>
+    <h1>Frog Cosmetic Creation</h1>
+    <p>Feel free to create a design in the space below, which you can then submit to be used in the app! We will contact you before accepting your design to make sure we credit you appropriately and reward you with FrogCoin and the cosmetic you contributed :)</p>
+    <p>You can also download the frog template and import it into your own drawing app. After you create your design, export it as a transparent PNG with a square aspect ratio and upload it using the buttons below! You will be similarly credited/rewarded for your work.</p>
+    <div class="download-buttons">
+        <a onclick="return confirm('Download white frog template?');"
+          download="white_frog" target="_blank" href="white_frog_template.png">
+          <mat-icon>download</mat-icon>
+            Download White Frog
+         </a>
+         <a onclick="return confirm('Download green frog template?');"
+           download="green_frog" target="_blank" href="frog_template.png">
+           <mat-icon>download</mat-icon>
+            Download Green Frog
+        </a>
+    </div>
+
+    <p><b><i>(Web Creator Under Construction)</i></b></p>
+    <div class="sketch-container">
+        <div id="sketch-buttons">
+            <button (click)="clearCanvas()"><mat-icon>delete</mat-icon></button>
+            <button (click)="undoCanvas()"><mat-icon>undo</mat-icon></button>
+        </div>
+        <div id="sketch-holder"></div>
+    </div>
+
+    <div class="upload">
+        <label for="file" class="btn">
+            <mat-icon>attach_file</mat-icon>
+            Upload Image
+        </label>
+        <input type="file" style="display:none;" id="file" (change)="handleFileInput($event)">
+        <label>
+           <i>{{ file?.name }}</i>
+        </label>
+    </div>
+    <div class="preview" ngIf="url != ''">
+        <img id="preview-image" [src]="url">
+        <img [style.display]="(url == '' || cosmeticType != 'background') ? 'none' : 'flex'" 
+            id="overlay-frog" src="frog_template.png" />
+    </div>
+
+    <div class="submit-form">
+        <label for="type">Cosmetic Type:</label>
+        <select [(ngModel)]="cosmeticType">
+            <option value="hat">Hat</option>
+            <option value="shirt">Shirt</option>
+            <option value="item">Item</option>
+            <option value="background">Background</option>
+          </select>
+
+        <label for="name">Cosmetic Name:</label>
+        <input id="name" type="text" placeholder="The item name that will appear in-app"
+            [(ngModel)]="cosmeticName" required />
+        
+        <label for="artist">Artist Contact:</label>
+        <input id="name" type="text" placeholder="How can we contact you?"
+             [(ngModel)]="artistContact" required />
+    </div>
+    <div class="alert" ngIf='alertTxt != ""'><i>{{ alertTxt }}</i></div>
+    <button id="submit" (click)="submitCosmetic()">Submit</button>
+</div>
