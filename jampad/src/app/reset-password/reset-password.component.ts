@@ -1,7 +1,5 @@
-// I'll keep it 100, I ChatGPT'ed like 90% of this
-
 import { Component, inject, OnInit } from '@angular/core';
-import { createClient } from '@supabase/supabase-js';
+import { EmailOtpType } from '@supabase/supabase-js';
 import { createBrowserClient } from '@supabase/ssr';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -26,14 +24,15 @@ export class ResetPasswordComponent implements OnInit {
   success = false;
 
   async ngOnInit() {
-    const code = this.route.snapshot.queryParamMap.get('code');
-    if(!code) {
-      this.error = "Invalid or expired reset link.";
-      return;
-    }
-    const { data, error } = await sb.auth.exchangeCodeForSession(code);
-    if (error || !data?.session) {
-      this.error = 'Failed to set session: ' + (error?.message || 'unknown error');
+    const token_hash = this.route.snapshot.queryParamMap.get('token_hash');
+    const type = this.route.snapshot.queryParamMap.get('type') as EmailOtpType | null
+
+    if (token_hash && type) {
+      const { error } = await sb.auth.verifyOtp({ type, token_hash });
+      if(error){
+        console.log(error);
+        this.error = error?.message;
+      } 
     }
   }
 
@@ -44,7 +43,6 @@ export class ResetPasswordComponent implements OnInit {
     }
 
     const { error } = await sb.auth.updateUser({ password: this.password });
-
     if (error) {
       this.error = error.message;
     } else {

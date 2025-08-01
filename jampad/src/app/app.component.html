@@ -7,7 +7,7 @@
 
   <div class="content" *ngIf="isSidebarOpen; else main_view">
     <div class="mobile-sidebar">
-      <app-sidebar-group></app-sidebar-group>
+      <app-sidebar-group (click)="isSidebarOpen = false"></app-sidebar-group>
     </div>
   </div>
   

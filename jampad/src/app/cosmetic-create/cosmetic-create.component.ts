@@ -105,7 +105,7 @@ export class CosmeticCreateComponent implements AfterViewInit  {
   ngAfterViewInit() {
     const sketch = (s: p5) => {
       s.setup = () => {
-        const size = s.windowWidth - (s.windowWidth >= 768 ? 600 : 100);
+        const size = s.windowWidth - (s.windowWidth >= 768 ? 500 : 100);
         this.canvasObj = s.createCanvas(size, size);
         this.canvasObj.parent('sketch-holder');
 
@@ -120,10 +120,8 @@ export class CosmeticCreateComponent implements AfterViewInit  {
         s.rect(0, 0, s.width, s.height);
       };
 
-      s.draw = () => {
-        if(s.mouseIsPressed) {
-          s.line(s.mouseX, s.mouseY, s.pmouseX, s.pmouseY);
-        }
+      s.mouseDragged = () => {
+        s.line(s.mouseX, s.mouseY, s.pmouseX, s.pmouseY);
       };
       s.mouseReleased = (event: MouseEvent) => {
         let rect = this.canvasObj?.elt.getBoundingClientRect();
