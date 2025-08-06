@@ -1,7 +1,8 @@
 <div>
     <h1>Frog Cosmetic Creation</h1>
-    <p>Feel free to create a design in the space below, which you can then submit to be used in the app! We will contact you before accepting your design to make sure we credit you appropriately and reward you with FrogCoin and the cosmetic you contributed :)</p>
-    <p>You can also download the frog template and import it into your own drawing app. After you create your design, export it as a transparent PNG with a square aspect ratio and upload it using the buttons below! You will be similarly credited/rewarded for your work.</p>
+    <p>If you're an artist, we'd love to feature a design by you in our app!</p>
+    <p>You can download the frog template and import it into your own drawing app. After you create your design, export it (just the actual cosmetic, without the frog) as a transparent PNG with a square aspect ratio and upload it using the buttons below.</p>
+    <p>You will be shown a preview of your design before you end up submitting it. We will contact you before accepting your design to make sure we credit you appropriately. Any artists who submit designs that are accepted will be credited and rewarded in the app!</p>
     <div class="download-buttons">
         <a onclick="return confirm('Download white frog template?');"
           download="white_frog" target="_blank" href="white_frog_template.png">
@@ -13,15 +14,6 @@
            <mat-icon>download</mat-icon>
             Download Green Frog
         </a>
-    </div>
-
-    <p><b><i>(Web Creator Under Construction)</i></b></p>
-    <div class="sketch-container">
-        <div id="sketch-buttons">
-            <button (click)="clearCanvas()"><mat-icon>delete</mat-icon></button>
-            <button (click)="undoCanvas()"><mat-icon>undo</mat-icon></button>
-        </div>
-        <div id="sketch-holder"></div>
     </div>
 
     <div class="upload">

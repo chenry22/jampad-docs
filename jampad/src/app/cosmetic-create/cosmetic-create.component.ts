@@ -12,15 +12,7 @@ import p5 from 'p5';
   styleUrl: './cosmetic-create.component.css'
 })
 
-export class CosmeticCreateComponent implements AfterViewInit  {
-  canvas: p5 | null = null;
-  canvasObj: p5.Renderer | null = null;
-  sw = 4;
-  color: any;
-  previousState: p5.Image[] = [];
-  lastX = 0;
-  lastY = 0;
-
+export class CosmeticCreateComponent  {
   // file upload
   MAX_IMG_SIZE = 500000; // target 500kb
   file : File | null = null;
@@ -99,64 +91,6 @@ export class CosmeticCreateComponent implements AfterViewInit  {
       this.artistContact = '';
       this.url = '';
       alert("Success! If your cosmetic is accepted we will contact you.");
-    }
-  }
-
-  ngAfterViewInit() {
-    const sketch = (s: p5) => {
-      s.setup = () => {
-        const size = s.windowWidth - (s.windowWidth >= 768 ? 500 : 100);
-        this.canvasObj = s.createCanvas(size, size);
-        this.canvasObj.parent('sketch-holder');
-
-        s.background(255);
-        s.loadImage('frog_template.png', (img) => {
-          s.tint(255, 100);
-          s.image(img, 0, 0, s.width, s.height);
-          s.tint(255, 255);
-          this.previousState.push(s.get()); // save og state
-        });
-        s.strokeWeight(this.sw);
-        s.rect(0, 0, s.width, s.height);
-      };
-
-      s.mouseDragged = () => {
-        s.line(s.mouseX, s.mouseY, s.pmouseX, s.pmouseY);
-      };
-      s.mouseReleased = (event: MouseEvent) => {
-        let rect = this.canvasObj?.elt.getBoundingClientRect();
-        let x = event.clientX;
-        let y = event.clientY;
-
-        if(x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom) {
-          console.log("cached");
-          this.previousState.push(s.get());
-          this.lastX = s.mouseX;
-          this.lastY = s.mouseY;
-          }
-      };
-    };
-    this.canvas = new p5(sketch);
-  }
-  clearCanvas() {
-    let og = this.previousState[0];
-    this.previousState = [og];
-    this.canvas?.background('white');
-    this.canvas?.image(og, 0, 0, this.canvas?.width, this.canvas?.height);
-  }
-  undoCanvas() {
-    if (this.previousState.length < 2) { return; } // save OG state
-    this.previousState.pop();
-    let prev = this.previousState[this.previousState.length - 1];
-    if(prev) {
-      this.canvas?.image(this.previousState[0], 0, 0, this.canvas?.width, this.canvas?.height);
-      this.canvas?.image(prev, 0, 0, this.canvas?.width, this.canvas?.height);
-    }
-  }
-
-  ngOnDestroy(): void {
-    if (this.canvas) {
-      this.canvas?.remove(); // Removes canvas and cleans up when view disappears
     }
   }
 }
