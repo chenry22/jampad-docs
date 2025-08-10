@@ -26,9 +26,11 @@
            <i>{{ file?.name }}</i>
         </label>
     </div>
-    <div class="preview" ngIf="url != ''">
+    <div class="preview" [style.display]="url == '' ? 'none' : 'block'">
+        <img [style.display]="(url == '' || cosmeticType == 'background') ? 'none' : 'block'"
+            id="under-frog" src="frog_template.png" />
         <img id="preview-image" [src]="url">
-        <img [style.display]="(url == '' || cosmeticType != 'background') ? 'none' : 'flex'" 
+        <img [style.display]="(url == '' || cosmeticType != 'background') ? 'none' : 'block'" 
             id="overlay-frog" src="frog_template.png" />
     </div>
 

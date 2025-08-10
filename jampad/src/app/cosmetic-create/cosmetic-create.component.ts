@@ -32,8 +32,8 @@ export class CosmeticCreateComponent  {
   handleFileInput(e: Event) {
     const target= e.target as HTMLInputElement;
     const f = (target.files as FileList)[0];
-    if(f.type != "image/png") {
-      this.alertTxt = "Please only submit PNGs"
+    if(f.type != "image/png" && f.type != "image/jpeg" && f.type != "image/jpg") {
+      this.alertTxt = "Please only submit images"
       return;
     }
 
@@ -41,18 +41,7 @@ export class CosmeticCreateComponent  {
     reader.readAsDataURL(f); 
     reader.onload = async (e: any) => { 
       const img = e.target.result;
-      const size = this.imgCompress.byteCount(img);
-      if(size > this.MAX_IMG_SIZE) {
-        const maxLength = Math.sqrt(this.MAX_IMG_SIZE);
-        const ratio = (maxLength / Math.sqrt(size)) * 100;
-        console.log("Before: " + size + ", ratio: " + ratio)
-        this.imgCompress.compressFile(img, -1, ratio, 50, maxLength, maxLength).then((compressed) => {
-          this.url = compressed;
-          console.log('Compressed:', this.imgCompress.byteCount(compressed));
-        });
-      } else {
-        this.url = img;
-      }
+      this.url = img;
       this.file = f;
     }
   }
