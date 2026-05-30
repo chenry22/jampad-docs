@@ -103,6 +103,9 @@ hr.solid {
 .docs::-webkit-scrollbar {
     display: none;
 }
+.docs > * {
+    min-width: 0;
+}
 
 
 

@@ -17,11 +17,13 @@ import { VenueAccountPageComponent } from './pages/venue-account-page/venue-acco
 import { AdminAccountPageComponent } from './pages/admin-account-page/admin-account-page.component';
 import { CosmeticCreateComponent } from './cosmetic-create/cosmetic-create.component';
 import { DownloadPageComponent } from './pages/download-page/download-page.component';
+import { CosmeticGalleryPageComponent } from './pages/cosmetic-gallery-page/cosmetic-gallery-page.component';
 
 export const routes: Routes = [
     { path: '', component: WelcomePageComponent },
     { path: 'download', component: DownloadPageComponent },
     { path: 'create_cosmetic', component: CosmeticCreateComponent},
+    { path: 'cosmetic_gallery', component: CosmeticGalleryPageComponent },
     { path: 'reset_password', component: ResetPasswordComponent },
 
     { path: 'event_feed', component: EventFeedPageComponent },

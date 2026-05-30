@@ -1,0 +1,91 @@
+:host {
+    display: block;
+    width: 100%;
+}
+
+.filter {
+    display: flex;
+    gap: 10px;
+    min-width: 0;
+    width: 100;
+}
+
+.filter p {
+    text-wrap-mode: nowrap;
+    font-weight: bold;
+    color: rgb(57, 57, 57);
+}
+.overflow-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap: 10px;
+    align-items: center;
+}
+.overflow-wrapper > div {
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: darkblue;
+    color: white;
+    padding: 6px 10px;
+    text-wrap-mode: nowrap;
+}
+.filter div:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+.filter div.active {
+    background-color: rgb(75, 75, 234);
+    color: black;
+}
+
+.gallery {
+    max-width: 100%;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.gallery div {
+    position: relative;
+    width: 18dvw;
+    min-width: 150px;
+    max-width: 220px;
+    height: 18dvw;
+    min-height: 150px;
+    max-height: 220px;
+    aspect-ratio: 1;
+    border: 3px solid white;
+    border-radius: 4px;
+}
+.gallery div:hover {
+    transform: scale(1.02);
+}
+.gallery div img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallery div.rarity-0 {
+    border-color: rgb(152, 151, 151);
+    background-color: rgb(152, 151, 151, 0.3);
+}
+.gallery div.rarity-1 {
+    border-color: rgb(108, 194, 65);
+    background-color: rgb(108, 194, 65, 0.3);
+}
+.gallery div.rarity-2 {
+    border-color: rgb(65, 94, 255);
+    background-color: rgb(65, 94, 255, 0.3);
+}
+.gallery div.rarity-3 {
+    border-color: rgb(169, 0, 216);
+    background-color: rgb(169, 0, 216, 0.3);
+}
+.gallery div.rarity-4 {
+    border-color: rgb(255, 217, 48);
+    background-color: rgb(255, 217, 48, 0.3);
+}

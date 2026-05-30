@@ -1,0 +1,41 @@
+<h1 id="title">Cosmetic Gallery</h1>
+<p>Here is a collection of all the current frog cosmetics available in app. Feel free to sort by item type, rarity, artist, etc.</p>
+
+<div class="filter">
+    <p>Sort by:</p>
+    <div class="overflow-wrapper">
+        <div [class]="sort === 'rarity' ? 'active' : ''" (click)="changeSort('rarity')">Rarity</div>
+        <div [class]="sort === 'type' ? 'active' : ''" (click)="changeSort('type')">Item Type</div>
+        <div [class]="sort === 'artist' ? 'active' : ''" (click)="changeSort('artist')">Artist</div>
+    </div>
+</div>
+<div class="filter">
+    <p>Item Type:</p>
+    <div class="overflow-wrapper">
+        <div [class]="filteredTypes.has(0) ? 'active' : ''" (click)="filterType(0)">Hats</div>
+        <div [class]="filteredTypes.has(1) ? 'active' : ''" (click)="filterType(1)">Shirts</div>
+        <div [class]="filteredTypes.has(2) ? 'active' : ''" (click)="filterType(2)">Items</div>
+        <div [class]="filteredTypes.has(3) ? 'active' : ''" (click)="filterType(3)">Backgrounds</div>
+    </div>
+</div>
+<div class="filter">
+    <p>Artist:</p>
+    <div class="overflow-wrapper">
+        @for (artist of artists; track artist) {
+            <div [class]="filteredArtists.has(artist) ? 'active' : ''" (click)="filterArtist(artist)">{{ artist }}</div>
+        } @empty {
+            <div>Error</div>
+        }
+    </div>
+</div>
+
+<div class="gallery">
+    @for (item of sortedGallery; track item.id) {
+        <div [class]="'rarity-' + item.rarity">
+            <img [style]="item.item_type === 3 ? 'z-index: 0' : 'z-index: 2'" [src]="'cosmetics/' + item.item_string + '.png'"/>
+            <img src="frog_template.png"/>
+        </div>
+    } @empty {
+        <div>None</div>
+    }
+</div>

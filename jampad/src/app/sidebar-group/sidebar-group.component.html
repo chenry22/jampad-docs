@@ -20,6 +20,12 @@
                         Cosmetic Creation
                     </a>
                 </li>
+                <li class="sidebar-group-member">
+                    <a routerLink="/cosmetic_gallery" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">
+                        <mat-icon aria-hidden="false" fontIcon="wallpaper"></mat-icon>
+                        Cosmetic Gallery
+                    </a>
+                </li>
             </ul>
         </li>
         <li *ngFor="let group of groups">

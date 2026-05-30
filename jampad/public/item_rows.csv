@@ -1,0 +1,79 @@
+id,item_string,cost,artist,rarity,item_type,name,purchases,public
+0026dce8-252d-4d35-ab59-e0be0b0470e6,chain_and_grill,200,Mr. Barnacles,1,2,Chain and Grill,6,true
+03d9baeb-ba5c-43fd-a88f-5b2267e98fe1,angry_face,100,Mr. Barnacles,0,0,Angry Face,3,true
+04c388d2-4229-4ea4-8d08-4541fedbfe8d,flower_crown,200,caleb,1,0,Flower Crown,2,true
+069bca8a-1594-494e-ba65-2322ea17246f,wizard,200,caleb,1,0,Wizard Hat,6,true
+11445fc4-7680-4d96-bd8a-0f5e247f841c,skateboard_bg,100,caleb,0,3,Skateboard,6,true
+1432a4aa-16ec-47ab-9de5-10e695c20445,robo_head,500,caleb,3,0,Robo Frog,0,true
+189a8809-3879-4730-ab8b-6162172e8d7b,spoon_friend,1000,Large Spoon,4,2,Spoon Friend,26,true
+1c1b31ca-b828-4c7d-bc97-64a472f6674c,lollipop,200,caleb,1,2,Lollipop,4,true
+1e4abaf7-e654-4c3a-bf78-ab3b08e73e6b,royal_cape,500,caleb,3,1,Royal Cape,1,true
+1ed8ae16-7123-4337-bde0-dd007b97ebf2,skeleton,500,Mr. Barnacles,3,0,Skeleton,0,true
+2519da4b-0156-42b1-8921-b774d206cdf3,bobcat_press_shirt,300,caleb,2,1,Bobcat Press Shirt,10,true
+28618a85-a4cd-4703-a9d4-5a4448c4ce3b,k_jacket,500,Kendall O.,3,1,K's Jacket,4,true
+334be0a2-3d50-4e61-a615-e651f5e894c8,wizard_staff,300,caleb,2,2,Wizard Staff,0,true
+34813620-551e-495b-9bf8-bdc3b425553a,large_spoon,500,Large Spoon,3,2,Large Spoon,3,true
+354dea1d-5068-4d84-880d-1ded87f86f36,cool_hair,300,Mr. Barnacles,2,0,Cool Hair,1,true
+3683171d-9401-4d61-b616-0060ecf0d20f,castle_at_night,300,caleb,2,3,Nighttime Castle,2,true
+3a95bd08-5cb4-4505-8319-db88af0d2f6c,wavy_hair,300,Mr. Barnacles,2,0,Wavy Hair,0,true
+3b2acd55-690a-43b7-af2e-57768f8d02c7,tie_dye_shirt,500,caleb,3,1,Tie-Dye,3,true
+3bf6b1b5-25f8-4484-a878-5f26bd01c4ca,boots,100,Kendall O.,0,1,Boots,6,true
+3edff027-6cbe-45e1-a070-fa6fa9c8d6cd,eyepatch,100,caleb,0,0,Eyepatch,5,true
+3f17f1c4-d172-4184-a4b5-7d50f47cee9d,beach,300,caleb,2,3,Beach Vacation,2,true
+446a78ec-bf53-4a55-8c8b-0bfc9648e10d,lincoln,300,Mr. Barnacles,2,0,Lincoln,2,true
+468910af-727d-4075-a74a-71998f0407b2,green_tie,100,caleb,0,1,Green Tie,3,true
+47f97d9f-4827-4b3e-9d0e-08556e585d10,royal_crown,500,caleb,3,0,Crown,3,true
+484786fc-6392-4798-9685-778aa191b77e,propeller,500,caleb,3,0,Silly Hat,1,true
+4c210c87-78f7-402c-8b1b-52924b74e8a0,space_helmet,300,caleb,2,0,Space Helmet,2,true
+4e923861-33a0-475c-9879-457dd695dde3,gold_watch,1000,caleb,4,2,Gold Watch,3,true
+4ebcc424-5f09-4674-a75b-566503e5472b,fishnet,100,Kendall O.,0,1,Fishnet,4,true
+54ce0895-476c-4715-bf64-6348b591936f,construction_helmet,200,caleb,1,0,Construction Helmet,2,true
+57e4a510-3af1-4652-92e0-22003ee31e33,basketball,100,caleb,0,2,Basketball,3,true
+6282c028-9c95-4f08-87e0-4b01f0cd690e,sunglasses,100,caleb,0,0,Sunglasses,3,true
+6476270a-f416-490e-9fa6-7b418ec7e032,baseball_cap,200,caleb,1,0,White Cap,2,true
+699b5ba4-7ef3-4f99-9c73-3b43ff07f0e0,fish_head,300,caleb,2,0,Fish Head,0,true
+75d156de-2a83-4718-9f27-144189b1f0db,top_hat,200,caleb,1,0,Top Hat,1,true
+76e4c201-3046-4f52-be74-fceac578a387,boxing_gloves,300,Mr. Barnacles,2,2,Boxing Gloves,1,true
+7789af8c-70a3-407d-9197-ae5c49a0b207,party_hat,100,caleb,0,0,Party Hat,3,true
+7c2e0593-17bf-4c39-86ab-dedbd3e7f206,hawaiian_shirt,300,caleb,2,1,"Floral Shirt ",1,true
+7d10cef3-a276-4e89-8fca-5431163f35bd,star_bg,100,caleb,0,3,Stars,10,true
+8759a222-947a-4899-ba95-3a20724c983e,cloudy_rainy,100,Kendall O.,0,1,Grumpy Frog,2,true
+89bb9910-bfd3-432e-97d2-1d776bf32392,frog_faces,100,caleb,0,3,Froggy Faces,0,true
+8bcc7ea7-777f-4d64-af70-949ccea18e66,vampire_cape,200,caleb,1,1,Cape,2,true
+8ec07963-5b16-49d5-b352-27c5b36357bc,balloon,100,caleb,0,2,Balloon,0,true
+9091ac19-efe2-41da-881f-56121cbb345e,paper_bag_head,200,caleb,1,0,Paper Bag Head,3,true
+943d67c7-9576-4fc7-8e62-13bf84d5814c,fangs,100,Kendall O.,0,2,Fangs,5,true
+9e295d23-be79-43e6-8292-6b542ebc11c7,business_tie,100,caleb,0,1,Red Tie,4,true
+a12e9230-884f-4b64-92fc-d915238f6e4f,frog_pond,200,caleb,1,3,At the Pond,4,true
+a2209799-8f9c-4888-ab82-199f49c50b26,burger,500,caleb,3,2,Burger,1,true
+a784d51e-4091-4d82-9d55-7aa4189a45f8,viking_hat,200,Mr. Barnacles,1,0,Viking Helmet,2,true
+a8be4d09-1bd1-4006-a02f-b630151df81d,nerd_face,200,Mr. Barnacles,1,0,Nerd,0,true
+aa21740e-30f8-4790-ab17-38b1b26725ed,electric_guitar_red,500,caleb,3,2,Electric Guitar (Red),0,true
+ae0a43ce-cbc8-4231-8f51-0aec0d13333c,jampad_shirt,100,caleb,0,1,I <3 JamPad Shirt,23,true
+aeff8910-d9bd-4150-b0d0-79b530ad97fb,blue_tie,100,caleb,0,1,Blue Tie,1,true
+b03dc07a-f0e2-4246-8785-ad81f8e450a1,purple_skeleton,1000,Mr. Barnacles,4,0,Purple Skeleton,0,true
+b0549e25-aaad-45c8-b6bd-5d711de4eca2,bow_tie,100,Mr. Barnacles,0,1,Bow Tie,1,true
+b126dc2d-a019-4d5c-8383-42185f62e845,basketball_jersey,1000,caleb,4,1,Jersey,1,true
+b17a0cd5-284d-4bb1-8b8a-1ac4f4b2ce83,moon,300,Mr. Barnacles,2,3,In Space,0,true
+b2c2690c-765c-4d3b-aff2-1cca228a9688,pierrot_hat,300,Kendall O.,2,0,Pierrot Hat,0,true
+b5cfb216-f330-452c-9e32-d935870f6b6e,lucky,100,Kendall O.,0,1,Lucky Frog,0,true
+c276d3e6-f4c4-45b5-b5c6-7ef343856f82,star_glasses,100,caleb,0,0,Star Glasses,0,true
+c4b9b40d-7937-4f21-94bf-17b533c74e75,microphone_stand,100,caleb,0,2,Mic Stand,3,true
+c528d910-daff-40b5-b7d9-9926b99b742d,brick_wall,200,caleb,1,3,Brick Wall,0,true
+c97a9df4-70b1-472c-9cb7-672f703dfe35,3d_glasses,100,caleb,0,0,3D Glasses,0,true
+d23ff6f4-fa01-43e1-ad4b-58067f9edaf0,bobcat_press_bg,200,caleb,1,3,Bobcat Background,0,true
+d523b324-251c-416f-be39-2c17fe605c69,pumpkin_head,500,Mr. Barnacles,3,0,Pumpkin Head,1,true
+d60c4342-ddcf-4951-a240-9bfc45d21c05,fishnet_and_boots,300,Kendall O.,2,1,Fishnet and Boots,0,true
+d9522eff-15f0-497d-bf43-ba466ebb14b0,keyboard,500,caleb,3,2,Keyboard,0,true
+dc6eb6bf-6819-4d4d-9779-c7294f49e391,earbud_phone,300,caleb,2,2,Earbuds,1,true
+df4897a6-7736-4933-b009-867eb1cec7a7,frog_shirt,200,caleb,1,1,Frog Shirt,1,true
+e17457c1-371b-4ab6-b27c-838d90a48b0d,flower_head,100,caleb,0,0,Flower Head,0,true
+e6a5259e-25c4-43ee-b870-05385c19715b,electric_guitar_green,500,caleb,3,2,Electric Guitar (Green),1,true
+e8367782-c30b-4597-ac7a-d91c6811286d,jampad_docs,500,caleb,3,2,JamPad Docs,2,false
+ecfa0464-b445-4c4e-ae80-5d2d35d948e3,electric_guitar_blue,500,caleb,3,2,Electric Guitar (Blue),1,true
+eff07a9b-3f20-469b-91f0-96cc7a89b3e9,headphones,100,caleb,0,0,Headphones,1,true
+f4596eba-b6e8-4198-9059-820d46bd65b5,jacket_thing,300,caleb,2,1,Blue Jacket,0,true
+f666750f-2110-4ec9-9324-28b7c8d2e60a,grad_cap,200,caleb,1,0,Grad Cap,0,true
+f704a7a1-d056-496a-8517-1a43c301eb89,spike_choker,300,Kendall O.,2,2,Spike Choker,1,true
+f7af73f3-ece8-44f2-ad92-2214ca338d1d,fedora,100,Mr. Barnacles,0,0,Fedora,0,true
+fb4856b3-1cc8-4f02-b861-f81895df87e2,jester_hat,300,caleb,2,0,Jester,0,true
